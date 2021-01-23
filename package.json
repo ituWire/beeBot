@@ -5,9 +5,9 @@
   "name": "hello-sqlite",
   "version": "0.0.1",
   "description": "A simple Node app with SQLite as a database management system, instantly up and running.",
-  "main": "bot.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "better-sqlite3": "^7.1.1",
@@ -16,7 +16,8 @@
     "discord.js": "^12.3.1",
     "express": "^4.17.1",
     "nodemailer": "^6.4.11",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.0",
+    "cron": "^1.8.2"
   },
   "engines": {
     "node": "12.x"

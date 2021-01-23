@@ -7,6 +7,7 @@ module.exports = {
     channelOnly: true,
     adminOnly: false,
     channel: "not-dağılımı-ara",
+    dmAvailable: false,
     execute(message,DB,args,fs, transporter,client){
       essentials.findTeacherPage(args,result => {
         result.forEach(block => {

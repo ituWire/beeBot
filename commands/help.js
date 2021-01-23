@@ -9,6 +9,7 @@ isteğe bağlı olarak özel bir komut veya komutlar için aratılabilir.`,
   channelOnly: false,
   adminOnly: false,
   channel: "",
+  dmAvailable: false,
   execute(message, DB, args, fs, transporter, client) {
     let blocks = read(args);
     blocks.forEach(block => {
@@ -26,7 +27,7 @@ isteğe bağlı olarak özel bir komut veya komutlar için aratılabilir.`,
           }
         ]
       };
-      message.channel.send({embed: messageEmbed});
+      message.author.send({embed: messageEmbed});
     });
   }
 };
